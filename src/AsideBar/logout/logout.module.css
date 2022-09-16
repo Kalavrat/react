@@ -1,0 +1,15 @@
+.log {
+  display: flex;
+  align-items: center;
+  margin-left: 38px;
+}
+.a {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #707c97;
+  text-transform: uppercase;
+  margin-left: 21px;
+}

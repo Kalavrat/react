@@ -1,0 +1,21 @@
+.acc {
+  display: grid;
+  margin-left: 62px;
+  width: max-content;
+  margin-bottom: 88px;
+  margin-top: 88px;
+  align-items: center;
+}
+.img {
+  margin-bottom: 6px;
+  margin: auto;
+}
+.a {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  color: #0d1c2e;
+  margin: auto;
+}

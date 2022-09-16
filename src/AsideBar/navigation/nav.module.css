@@ -1,0 +1,16 @@
+.main {
+  margin-bottom: 311px;
+}
+.ul {
+  /* margin-left: 38px; */
+  padding: 0px;
+}
+.li {
+  padding-left: 38px;
+  list-style-type: none;
+  text-align: left;
+  margin-bottom: 50px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+}

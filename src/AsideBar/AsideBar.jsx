@@ -1,12 +1,17 @@
 import React from "react";
-import Navigation from "../navigation/nav";
+import Navigation from "./navigation/nav";
+import Img from "./img/img";
+import Logout from "./logout/logout";
+
+import styles from "./AsideBar.module.css";
 
 function AsideBar() {
   return (
-    <aside>
-      <img />
+    <aside className={styles.AsideBar}>
+      <Img />
       <Navigation />
-      <button />
+      <Logout />
+      {/* <button /> */}
     </aside>
   );
 }
