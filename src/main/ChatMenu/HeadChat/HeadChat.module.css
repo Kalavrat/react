@@ -1,0 +1,13 @@
+.div {
+  margin-top: 109px;
+  display: flex;
+}
+.span {
+  color: #0d1c2e;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 26px;
+  margin-right: 246px;
+}

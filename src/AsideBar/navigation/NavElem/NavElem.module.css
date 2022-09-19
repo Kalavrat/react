@@ -1,5 +1,4 @@
 .a {
-  text-decoration: none;
   color: #707c97;
   font-family: "Roboto";
   font-style: normal;
@@ -9,4 +8,24 @@
   text-transform: uppercase;
   padding-left: 20px;
   height: 19px;
+}
+.link {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+.selected span {
+  color: #2a8bf2;
+}
+.selected::before {
+  content: "";
+  position: absolute;
+  cursor: default;
+  left: 0;
+  width: 3px;
+  height: 40px;
+  background: #2a8bf2;
+  border-radius: 3px;
+  box-shadow: 1px 0px 10px rgba(42, 139, 242, 0.45),
+    0px 0px 10px rgba(42, 139, 242, 0.55), 4px 0px 25px rgba(42, 139, 242, 0.75);
 }

@@ -2,7 +2,6 @@
   margin-bottom: 311px;
 }
 .ul {
-  /* margin-left: 38px; */
   padding: 0px;
 }
 .li {
@@ -11,6 +10,4 @@
   text-align: left;
   margin-bottom: 50px;
   height: 24px;
-  display: flex;
-  align-items: center;
 }
