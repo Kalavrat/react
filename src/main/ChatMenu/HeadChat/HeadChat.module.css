@@ -1,6 +1,7 @@
 .div {
   margin-top: 109px;
   display: flex;
+  margin-bottom: 30px;
 }
 .span {
   color: #0d1c2e;

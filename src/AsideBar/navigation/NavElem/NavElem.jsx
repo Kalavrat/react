@@ -4,9 +4,7 @@ import { NavLink } from "react-router-dom";
 
 function NavElem({ href, label, link }) {
   return (
-    // <div>
     <NavLink
-      // className={styles.link}
       to={href}
       className={({ isActive }) =>
         isActive ? `${styles.link} ${styles.selected}` : `${styles.link}`
@@ -17,9 +15,6 @@ function NavElem({ href, label, link }) {
         {label}
       </span>
     </NavLink>
-    // <img src={link} />
-
-    // </div>
   );
 }
 export default NavElem;
