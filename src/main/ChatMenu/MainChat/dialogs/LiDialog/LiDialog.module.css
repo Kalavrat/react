@@ -87,6 +87,9 @@
   margin-top: 13px;
   display: flex;
 }
+.add :not(:first-child) {
+  margin-left: 20px;
+}
 .files {
   width: 110px;
   height: 40px;
@@ -106,7 +109,7 @@
   line-height: 26px;
 }
 .photos {
-  margin-left: 20px;
+  /* margin-left: 20px; */
   width: 110px;
   height: 40px;
   display: flex;
@@ -123,6 +126,25 @@
   font-size: 14px;
   line-height: 26px;
   color: #ff3366;
+}
+.videos {
+  /* margin-left: 20px; */
+  width: 110px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(13, 235, 13, 0.25);
+  border-radius: 20px;
+}
+.video {
+  margin-left: 5px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 26px;
+  color: #22eb29;
 }
 .unread_mes {
   position: absolute;

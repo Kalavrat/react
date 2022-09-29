@@ -12,9 +12,12 @@ function Dialogs() {
       status_img: "tochki.svg",
       status_text: "writes",
       date: "1 minute ago",
+      file_img: 0,
+      photo_img: 0,
+      video_img: 0,
       message:
         "Most of its text is made up from sections 1.10.32–3 of Cicero's De finibus bonorum et malorum (On the Boundaries of Goods and Evils; finibus may also be translated as purposes). ",
-      unread: "2",
+      unread: 2,
     },
     {
       href: "second",
@@ -26,9 +29,10 @@ function Dialogs() {
       date: "1 minute ago",
       micro_img: "mic.svg",
       voice_text: "Voice message (01:15)",
-      file_img: "file.svg",
-      photo_img: "Color.svg",
-      unread: "1",
+      file_img: 2,
+      photo_img: 1,
+      video_img: 0,
+      unread: 1,
     },
     {
       href: "third",
@@ -37,8 +41,12 @@ function Dialogs() {
       name: "Nika Jerrardo",
       status_text: "last online 5 hours ago",
       date: "3 days ago",
+      file_img: 0,
+      photo_img: 0,
+      video_img: 2,
       message:
         "Cicero famously orated against his political opponent Lucius Sergius Catilina.",
+      unread: 0,
     },
     {
       href: "fourth",
@@ -47,8 +55,12 @@ function Dialogs() {
       name: "David Armrosa",
       status_text: "last online 5 hours ago",
       date: "3 days ago",
+      file_img: 0,
+      photo_img: 0,
+      video_img: 0,
       message:
         "Most of its text is made up from sections 1.10.32–3 of Cicero's De finibus bonorum et malorum (On the Boundaries of Goods and Evils; finibus may also be translated as purposes). ",
+      unread: 0,
     },
   ];
   return (
@@ -68,6 +80,7 @@ function Dialogs() {
             voice_text,
             file_img,
             photo_img,
+            video_img,
             unread,
           }) => (
             <li className={styles.li} key={href}>
@@ -84,6 +97,7 @@ function Dialogs() {
                 voice_text={voice_text}
                 file_img={file_img}
                 photo_img={photo_img}
+                video_img={video_img}
                 unread={unread}
               />
             </li>

@@ -2,6 +2,79 @@ import React from "react";
 
 import styles from "./LiDialog.module.css";
 
+function Create_online({ online }) {
+  if (online == true) {
+    return <div className={styles.online}></div>;
+  }
+}
+
+function Create_unread({ unread }) {
+  if (unread > 0) {
+    return (
+      <div className={styles.unread_mes}>
+        <span className={styles.unread}>{unread}</span>
+      </div>
+    );
+  }
+}
+
+function Create_file({ file_img }) {
+  if (file_img == 0) {
+  } else if (file_img == 1) {
+    return (
+      <div className={styles.files}>
+        <img className={styles.file_img} src={"file.svg"} />
+        <span className={styles.file}>({file_img})</span>
+      </div>
+    );
+  } else {
+    return (
+      <div className={styles.files}>
+        <img className={styles.file_img} src={"file.svg"} />
+        <span className={styles.file}>(x{file_img})</span>
+      </div>
+    );
+  }
+}
+
+function Create_photo({ photo_img }) {
+  if (photo_img == 0) {
+  } else if (photo_img == 1) {
+    return (
+      <div className={styles.photos}>
+        <img className={styles.photo_img} src="color.svg" />
+        <span className={styles.photo}>({photo_img})</span>
+      </div>
+    );
+  } else {
+    return (
+      <div className={styles.photos}>
+        <img className={styles.photo_img} src="color.svg" />
+        <span className={styles.photo}>(x{photo_img})</span>
+      </div>
+    );
+  }
+}
+
+function Create_video({ video_img }) {
+  if (video_img == 0) {
+  } else if (video_img == 1) {
+    return (
+      <div className={styles.videos}>
+        <img className={styles.video_img} src={"film.svg"} />
+        <span className={styles.video}>({video_img})</span>
+      </div>
+    );
+  } else {
+    return (
+      <div className={styles.videos}>
+        <img className={styles.video_img} src={"film.svg"} />
+        <span className={styles.video}>(x{video_img})</span>
+      </div>
+    );
+  }
+}
+
 function LiDialog({
   online,
   avatar,
@@ -14,13 +87,15 @@ function LiDialog({
   voice_text,
   file_img,
   photo_img,
+  video_img,
   unread,
 }) {
   return (
     <div className={styles.li}>
       <div className={styles.head}>
         <div className={styles.avatar}>
-          <div className={styles.online}></div>
+          {/* <div className={styles.online}></div> */}
+          <Create_online online={online} />
           <img className={styles.ava} src={avatar} />
         </div>
 
@@ -48,21 +123,16 @@ function LiDialog({
           </div>
 
           <div className={styles.add}>
-            <div className={styles.files}>
-              <img className={styles.file_img} src={file_img} />
-              <span className={styles.file}>Files (x2)</span>
-            </div>
-
-            <div className={styles.photos}>
-              <img className={styles.photo_img} src={photo_img} />
-              <span className={styles.photo}>Photo</span>
-            </div>
+            <Create_file file_img={file_img} />
+            <Create_photo photo_img={photo_img} />
+            <Create_video video_img={video_img} />
           </div>
         </div>
 
-        <div className={styles.unread_mes}>
+        {/* <div className={styles.unread_mes}>
           <span className={styles.unread}>{unread}</span>
-        </div>
+        </div> */}
+        <Create_unread unread={unread} />
       </div>
     </div>
   );

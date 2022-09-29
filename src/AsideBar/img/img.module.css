@@ -1,9 +1,7 @@
 .acc {
   display: grid;
-  margin-left: 62px;
   width: max-content;
-  margin-bottom: 88px;
-  margin-top: 88px;
+  margin: 88px 60px 88px 62px;
   align-items: center;
 }
 .img {
