@@ -5,6 +5,7 @@
   align-items: center;
   background-color: #ffffff;
   border-radius: 6px;
+  cursor: text;
 }
 .img {
   margin-left: 41px;

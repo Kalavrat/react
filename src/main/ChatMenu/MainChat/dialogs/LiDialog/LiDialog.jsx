@@ -9,12 +9,19 @@ function Create_online({ online }) {
 }
 
 function Create_unread({ unread }) {
-  if (unread > 0) {
+  if (unread > 0 && unread < 100) {
     return (
       <div className={styles.unread_mes}>
         <span className={styles.unread}>{unread}</span>
       </div>
     );
+  } else if (unread > 99) {
+    return (
+      <div className={styles.unread_mes}>
+        <span className={styles.unread}>99+</span>
+      </div>
+    );
+  } else {
   }
 }
 
@@ -24,14 +31,14 @@ function Create_file({ file_img }) {
     return (
       <div className={styles.files}>
         <img className={styles.file_img} src={"file.svg"} />
-        <span className={styles.file}>({file_img})</span>
+        <span className={styles.file}>File</span>
       </div>
     );
   } else {
     return (
       <div className={styles.files}>
         <img className={styles.file_img} src={"file.svg"} />
-        <span className={styles.file}>(x{file_img})</span>
+        <span className={styles.file}>File (x{file_img})</span>
       </div>
     );
   }
@@ -43,14 +50,14 @@ function Create_photo({ photo_img }) {
     return (
       <div className={styles.photos}>
         <img className={styles.photo_img} src="color.svg" />
-        <span className={styles.photo}>({photo_img})</span>
+        <span className={styles.photo}>Photo</span>
       </div>
     );
   } else {
     return (
       <div className={styles.photos}>
         <img className={styles.photo_img} src="color.svg" />
-        <span className={styles.photo}>(x{photo_img})</span>
+        <span className={styles.photo}>Photo (x{photo_img})</span>
       </div>
     );
   }
@@ -62,14 +69,14 @@ function Create_video({ video_img }) {
     return (
       <div className={styles.videos}>
         <img className={styles.video_img} src={"film.svg"} />
-        <span className={styles.video}>({video_img})</span>
+        <span className={styles.video}>Video</span>
       </div>
     );
   } else {
     return (
       <div className={styles.videos}>
         <img className={styles.video_img} src={"film.svg"} />
-        <span className={styles.video}>(x{video_img})</span>
+        <span className={styles.video}>Video (x{video_img})</span>
       </div>
     );
   }
@@ -93,18 +100,20 @@ function LiDialog({
   return (
     <div className={styles.li}>
       <div className={styles.head}>
-        <div className={styles.avatar}>
-          {/* <div className={styles.online}></div> */}
-          <Create_online online={online} />
-          <img className={styles.ava} src={avatar} />
-        </div>
+        <div className={styles.person}>
+          <div className={styles.avatar}>
+            {/* <div className={styles.online}></div> */}
+            <Create_online online={online} />
+            <img className={styles.ava} src={avatar} />
+          </div>
 
-        <div className={styles.dialog_name}>
-          <span className={styles.name}>{name}</span>
+          <div className={styles.dialog_name}>
+            <span className={styles.name}>{name}</span>
 
-          <div className={styles.status}>
-            <img className={styles.status_img} src={status_img} />
-            <span className={styles.status_text}>{status_text}</span>
+            <div className={styles.status}>
+              <img className={styles.status_img} src={status_img} />
+              <span className={styles.status_text}>{status_text}</span>
+            </div>
           </div>
         </div>
 

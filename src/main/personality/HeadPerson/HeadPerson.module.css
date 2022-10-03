@@ -1,0 +1,62 @@
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 850px;
+  background: #fafbff;
+  border-radius: 6px 6px 0px 0px;
+  margin-top: 109px;
+  padding: 28px 38px 28px 60px;
+  margin-right: 53px;
+}
+.person {
+  display: flex;
+}
+.dialog_name {
+  display: grid;
+  margin-left: 22px;
+}
+.name {
+  margin-bottom: 6px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  color: #0d1c2e;
+}
+.online {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #2a8bf2;
+}
+.atach {
+  display: flex;
+  width: 124px;
+  justify-content: space-between;
+}
+.files {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  background: #ffffff;
+  border-radius: 100%;
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.03),
+    0px 7px 25px rgba(42, 139, 242, 0.03), 0px 5px 25px rgba(42, 139, 242, 0.07);
+}
+.adds {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  background: #ffffff;
+  border-radius: 100%;
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.03),
+    0px 7px 25px rgba(42, 139, 242, 0.03), 0px 5px 25px rgba(42, 139, 242, 0.07);
+}

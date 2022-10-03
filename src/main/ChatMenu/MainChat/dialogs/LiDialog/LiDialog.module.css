@@ -4,6 +4,11 @@
 .head {
   display: flex;
   position: relative;
+  justify-content: space-between;
+}
+.person {
+  display: flex;
+  align-items: center;
 }
 /* .head:not(:last-child) {
   align-items: center;
@@ -18,7 +23,7 @@
 }
 .dialog_name {
   margin-left: 22px;
-  min-width: 342px;
+  /* min-width: 342px; */
 }
 .name {
   font-family: "Roboto";
@@ -60,7 +65,7 @@
   font-size: 16px;
   line-height: 19px;
   color: #707c97;
-  margin-right: 38px;
+  /* margin-right: 38px; */
   min-width: max-content;
 }
 .message {
@@ -144,12 +149,13 @@
   font-weight: 500;
   font-size: 14px;
   line-height: 26px;
-  color: #22eb29;
+  color: #19be1f;
 }
 .unread_mes {
   position: absolute;
   margin-left: 500px;
   width: 20px;
+  min-width: max-content;
   height: 20px;
   background: #ff3366;
   border-radius: 10px;
@@ -166,4 +172,5 @@
   font-weight: 500;
   font-size: 13px;
   line-height: 15px;
+  padding: 5px 6px;
 }

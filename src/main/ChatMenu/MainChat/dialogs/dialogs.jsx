@@ -17,7 +17,7 @@ function Dialogs() {
       video_img: 0,
       message:
         "Most of its text is made up from sections 1.10.32–3 of Cicero's De finibus bonorum et malorum (On the Boundaries of Goods and Evils; finibus may also be translated as purposes). ",
-      unread: 2,
+      unread: 100,
     },
     {
       href: "second",
@@ -32,7 +32,7 @@ function Dialogs() {
       file_img: 2,
       photo_img: 1,
       video_img: 0,
-      unread: 1,
+      unread: 3,
     },
     {
       href: "third",
@@ -46,7 +46,7 @@ function Dialogs() {
       video_img: 2,
       message:
         "Cicero famously orated against his political opponent Lucius Sergius Catilina.",
-      unread: 0,
+      unread: 1,
     },
     {
       href: "fourth",
